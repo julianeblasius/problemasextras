@@ -1,0 +1,9 @@
+
+<meta charset="UTF-8">
+<script>
+    const trimestre1 = Number(prompt('Informe qual a nota obtida no primeiro trimestre').trim().replace(',','.'));
+    const trimestre2 = Number(prompt('Informe qual a nota obtida no segundo trimestre').trim().replace(',','.'));
+    const trimestre3 = Number(prompt('Informe qual a nota obtida no terceiro trimestre').trim().replace(',','.'));
+    const media = (((trimestre1) + (trimestre2) + (trimestre3)) / 3)
+    alert(`Suas notas foram ${trimestre1.toFixed(1).replace('.',',')}, ${trimestre2.toFixed(1).replace('.',',')} e ${trimestre3.toFixed(1).replace('.',',')}. A média final é igual a ${media.toFixed(1).replace('.',',')}.`)
+</script> 

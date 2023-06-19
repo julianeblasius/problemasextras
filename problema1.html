@@ -1,0 +1,6 @@
+<script>
+    const cargatotal = prompt('Informe a carga horária total da disciplina em horas').trim().replace(',','.')
+    const cargacumprida = prompt('Informe qual foi a carga horária cumprida').trim().replace(',','.')
+    const porcentagem = (Number(cargatotal / 100) * cargacumprida)
+    alert(`A carga horária da disciplina é ${cargatotal} horas e você já cumpriu ${cargacumprida} horas. Isso equivale a ${porcentagem.toFixed(1).replace('.',',')}% da carga horária total.`)
+</script>
